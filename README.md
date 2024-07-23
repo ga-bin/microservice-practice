@@ -12,3 +12,4 @@
 * spring cloud를 활용한 설정정보 서비스 내 자동 주입
   - classpath, file, github를 통한 설정 정보 경로 설정
   - 암호화, 복호화
+* actuator를 이용해 서버 재기동 없이 설정 정보 refresh
