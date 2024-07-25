@@ -13,3 +13,4 @@
   - classpath, file, github를 통한 설정 정보 경로 설정
   - 암호화, 복호화
 * actuator를 이용해 서버 재기동 없이 설정 정보 refresh
+* rabbitMQ를 이용해 모든 컨테이너 한 번에 설정정보 refresh
