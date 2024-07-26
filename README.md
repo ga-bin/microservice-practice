@@ -15,4 +15,8 @@
 * actuator를 이용해 서버 재기동 없이 설정 정보 refresh
 * rabbitMQ를 이용해 모든 컨테이너 한 번에 설정정보 refresh
 * actuator + docker를 이용해 컨테이너의 liveness, readiness 관리
-
+* docker-compose를 통해 컨테이너 들의 실행 순서 및 configserver에서 주입할 설정정보, healthy 등 관리
+  - 각 서비스들의 image 생성
+  - 생성된 이미지들에 docker-compose에 설정된 설정 파일 주입
+  - docker 컨테이너 생성 시 docker-compose의 설정에 따라 컨테이너들 간의 실행 순서 및 configserver에서 주입할 설정정보, healthy 등 관리
+  
