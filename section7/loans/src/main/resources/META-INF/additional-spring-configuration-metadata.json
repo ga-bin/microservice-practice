@@ -1,0 +1,22 @@
+{"properties": [
+  {
+    "name": "build.version",
+    "type": "java.lang.String",
+    "description": "A description for 'build.version'"
+  },
+  {
+    "name": "loans.message",
+    "type": "java.lang.String",
+    "description": "A description for 'loans.message'"
+  },
+  {
+    "name": "loans.contactDetails",
+    "type": "java.lang.Map",
+    "description": "A description for 'loans.contactDetails'"
+  },
+  {
+    "name": "loans.onCallSupport",
+    "type": "java.util.List<java.lang.String>",
+    "description": "A description for 'loans.onCallSupport'"
+  }
+]}
