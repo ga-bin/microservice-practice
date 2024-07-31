@@ -20,3 +20,7 @@
   - 생성된 이미지들에 docker-compose에 설정된 설정 파일 주입
   - docker 컨테이너 생성 시 docker-compose의 설정에 따라 컨테이너들 간의 실행 순서 및 configserver에서 주입할 설정정보, healthy 등 관리
   
+## section7
+* 각 microservice별 mysql 컨테이너 생성 후 연동
+* docker network 동작 방식 이해
+
