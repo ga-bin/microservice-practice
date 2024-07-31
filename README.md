@@ -26,4 +26,5 @@
 
 ## section8
 * microservices에서 생성되는 여러 컨테이너들의 health를 확인하고 클라이언트 측 로드밸런싱 하기 위한 spring cloud neflix 실습
-  - eureka를 이용한 microservices 관리
+  - eureka를 이용한 microservice들 recovery discovery
+  - 
