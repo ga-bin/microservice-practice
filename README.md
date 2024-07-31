@@ -24,3 +24,5 @@
 * 각 microservice별 mysql 컨테이너 생성 후 연동
 * docker network 동작 방식 이해
 
+## section8
+* microservices에서 생성되는 여러 컨테이너들의 health를 확인하고 로드밸런싱 하기 위한 spring cloud neflix 구현
