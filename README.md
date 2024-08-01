@@ -28,5 +28,6 @@
 * microservices에서 생성되는 여러 컨테이너들의 health를 확인하고 클라이언트 측 로드밸런싱 하기 위한 spring cloud neflix 실습
   - eureka를 이용한 microservice들 상태관리
   - eureka, openfeign을 통한 microservices들 간 http 요청
-  - spring cloud load balancer를 통한 컨테이너들 간 로드밸런싱
   - eureka server의 self-preservation 이해
+  - docker에서 microservices및 configserver, eurekaserver 구동
+  - spring cloud load balancer를 통한 컨테이너들 간 로드밸런싱
