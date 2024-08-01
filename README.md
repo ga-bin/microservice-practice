@@ -31,3 +31,6 @@
   - eureka server의 self-preservation 이해
   - docker에서 microservices및 configserver, eurekaserver 구동
   - spring cloud load balancer를 통한 컨테이너들 간 로드밸런싱
+ 
+## section9
+* spring cloud gateway를 이용한 공통 로직 처리(routing, security, logging, 프로그램 감시, metric 수집)
