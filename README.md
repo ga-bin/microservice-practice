@@ -29,3 +29,4 @@
   - eureka를 이용한 microservice들 상태관리
   - eureka, openfeign을 통한 microservices들 간 http 요청
   - spring cloud load balancer를 통한 컨테이너들 간 로드밸런싱
+  - eureka server의 self-preservation 이해
