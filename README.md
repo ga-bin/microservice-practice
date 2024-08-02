@@ -35,5 +35,6 @@
 ## section9
 * 공통 로직 처리를 위한 edge server(spring cloud gateway이용)
   - dynamic routing 설정
+  - multiple filter, custom filter 설정
   - spring cloud gateway를 이용한 공통 로직 처리(routing, security, logging, 프로그램 감시, metric 수집)
   - 
