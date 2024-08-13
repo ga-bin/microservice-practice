@@ -37,4 +37,7 @@
   - dynamic routing 설정
   - multiple filter, custom filter 설정
   - spring cloud gateway를 이용한 공통 로직 처리(routing, security, logging, 프로그램 감시, metric 수집)
-  - 
+    (예시로는 routing, logging만 다룸)
+    
+## section10
+* resilience4j 라이브러리를 통한 microservices들 회복탄력성 관리
