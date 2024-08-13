@@ -42,5 +42,6 @@
 ## section10
 * resilience4j 라이브러리를 통한 microservices들 회복탄력성 관리
   * circuit breaker pattern
-    - 통신 실패 시 즉시 서비스 중단
-    - 부분 신호 테스트 후 서비스 재개
+    - 통신 실패 시 즉시 서비스 중단(OPEN 상태)
+    - 부분 신호 테스트 후 서비스 재개(HALF OPEN 상태 - CLOSED 상태)
+    - 
