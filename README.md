@@ -45,3 +45,5 @@
     - 통신 실패 시 즉시 서비스 중단(OPEN 상태) -> 부분 신호 테스트 후 서비스 재개(HALF OPEN 상태 - CLOSED 상태)
     - gateway에 circuit breaker pattern적용
     - openfeign을 이용한 각각의 microservices들에 circuit breaker pattern 적용
+  * retry 패턴
+    
