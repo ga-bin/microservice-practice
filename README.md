@@ -41,9 +41,11 @@
     
 ## section10
 * resilience4j 라이브러리를 통한 microservices들 회복탄력성 관리
-  * circuit breaker pattern
+  * circuit breaker 패턴
     - 통신 실패 시 즉시 서비스 중단(OPEN 상태) -> 부분 신호 테스트 후 서비스 재개(HALF OPEN 상태 - CLOSED 상태)
     - gateway에 circuit breaker pattern적용
     - openfeign을 이용한 각각의 microservices들에 circuit breaker pattern 적용
   * retry 패턴
+    - 통신 실패 시 재시도 횟수 및 시간, 실패 시 처리 관련 설정
+    - 
     
