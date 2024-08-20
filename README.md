@@ -51,4 +51,7 @@
     - api에 대한 최대 요청 횟수 토큰 방식으로 구현
     - radis를 이용한 ratelimiter pattern 구현(gatewayserver)
     - 일반 microservice container에서 ratelimiter pattern 구현
-  *  bulkhead 패턴  
+  *  bulkhead 패턴
+
+## section11
+* microservices observability & monitoring
