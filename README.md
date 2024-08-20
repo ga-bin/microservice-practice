@@ -37,4 +37,18 @@
   - dynamic routing 설정
   - multiple filter, custom filter 설정
   - spring cloud gateway를 이용한 공통 로직 처리(routing, security, logging, 프로그램 감시, metric 수집)
-  - 
+    (예시로는 routing, logging만 다룸)
+    
+## section10
+* resilience4j 라이브러리를 통한 microservices들 회복탄력성 관리
+  * circuit breaker 패턴
+    - 통신 실패 시 즉시 서비스 중단(OPEN 상태) -> 부분 신호 테스트 후 서비스 재개(HALF OPEN 상태 - CLOSED 상태)
+    - gateway에 circuit breaker pattern적용
+    - openfeign을 이용한 각각의 microservices들에 circuit breaker pattern 적용
+  * retry 패턴
+    - 통신 실패 시 재시도 횟수 및 시간, 실패 시 처리 관련 설정
+  * rate limiter 패턴
+    - api에 대한 최대 요청 횟수 토큰 방식으로 구현
+    - radis를 이용한 ratelimiter pattern 구현(gatewayserver)
+    - 일반 microservice container에서 ratelimiter pattern 구현
+  *  bulkhead 패턴  
