@@ -47,8 +47,8 @@
     - openfeign을 이용한 각각의 microservices들에 circuit breaker pattern 적용
   * retry 패턴
     - 통신 실패 시 재시도 횟수 및 시간, 실패 시 처리 관련 설정
-  * rate limiter 구현
+  * rate limiter 패턴
     - api에 대한 최대 요청 횟수 토큰 방식으로 구현
     - radis를 이용한 ratelimiter pattern 구현(gatewayserver)
     - 일반 microservice container에서 ratelimiter pattern 구현
-    
+  *  bulkhead 패턴  
