@@ -1,0 +1,56 @@
+spring:
+  application:
+    name: "gatewayserver"
+  config:
+    import: "optional:configserver:http://localhost:8071/"
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enabled: false
+          lowerCaseServiceId: true
+      httpclient:
+        connect-timeout: 1000
+        response-timeout: 5s
+  # radis      
+  data:
+    redis:
+      connect-timeout: 2s
+      host: localhost
+      port: 6379
+      timeout: 1s
+
+# actuator
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    gateway:
+      enabled: true     
+  info:
+    env:
+      enabled: true
+
+# info
+info:
+  app:
+    name: "gatewayserver"
+    description: "Eazy Bank Gateway Server Application"
+    version: "1.0.0"
+
+logging:
+  level:
+    com:
+      eazybytes:
+        gatewayserver: DEBUG
+
+# resilience4j의 circuitbreaker패턴을 위한 설정
+resilience4j.circuitbreaker: 
+  configs:
+    default:
+      slidingWindowSize: 10 # 최근 몇 개의 요청을 기준으로 회로 차단기의 상태를 판별할껀지
+      permittedNumberOfCallsInHalfOpenState: 2 # haltOpenState에서 몇 개의 요청을 허가할건지
+      failureRateThreshold: 50 # 회로차단기가 열림 상태로 적용되는 임계값(여기서는 50%)
+      waitDurationInOpenState: 10000 # 회로 차단기가 열림 상태가 된 후 몇 초동안 열림 상태를 유지할 것인지
