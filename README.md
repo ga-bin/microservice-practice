@@ -55,3 +55,4 @@
 
 ## section11
 * microservices observability & monitoring
+  * grafana, loki alloy를 통한 로그 모니터링
